@@ -7,7 +7,7 @@ class AppConstants {
   // ── Flask inference server ────────────────────────────────────────────
   // Set this to your PC's local IP while on the same WiFi network.
   // Find it with: ipconfig → "IPv4 Address"
-  static const String flaskBaseUrl = 'http://10.12.37.62:5000';
+  static const String flaskBaseUrl = 'http://10.12.100.39:5000';
 
   // ── Model config ─────────────────────────────────────────────────────
   static const double confidenceThreshold = 0.40;

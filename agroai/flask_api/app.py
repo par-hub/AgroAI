@@ -1,16 +1,3 @@
-"""
-AgroAI Flask inference server.
-Uses full TensorFlow TFLite interpreter — supports all op versions including
-FULLY_CONNECTED v12 which tflite_flutter cannot run on-device.
-
-Setup:
-    pip install -r requirements.txt
-    python app.py
-
-The server must be on the same WiFi network as the phone.
-Find your PC IP:  ipconfig  →  IPv4 Address  (e.g. 192.168.1.100)
-Set that IP in:   lib/utils/constants.dart  →  flaskBaseUrl
-"""
 
 import io
 import os
