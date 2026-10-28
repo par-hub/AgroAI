@@ -1,17 +1,31 @@
-# agroai
+# AgroAI — Flutter Mobile App
 
-A new Flutter project.
+This directory contains the Flutter mobile application for the AgroAI cattle-breed project.
 
-## Getting Started
+## Structure
 
-This project is a starting point for a Flutter application.
+- `lib/main.dart` — initializes Flutter and Supabase, then launches the app.
+- `lib/screens/` — application screens.
+- `lib/services/` — app service integrations.
+- `lib/models/` — data models.
+- `lib/widgets/` — reusable UI widgets.
+- `lib/utils/constants.dart` — shared constants and Supabase setup.
 
-A few resources to get you started if this is your first Flutter project:
+## Run locally
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Install Flutter and configure the Supabase project settings used by the app. From this directory:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
+
+Before using a personal deployment, verify the URL and public client key in the Supabase configuration and enforce appropriate Row Level Security policies. Never put a Supabase service-role key in a client application.
+
+## Parent project
+
+See the [AgroAI repository README](../README.md) for the web application, project layout, and current detection-flow status.
+
+## Technology
+
+Flutter · Dart · Supabase
